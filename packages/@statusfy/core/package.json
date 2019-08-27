@@ -1,0 +1,93 @@
+{
+  "name": "@statusfy/core",
+  "version": "0.4.3",
+  "description": "Core of Statusfy",
+  "author": {
+    "name": "Bazzite",
+    "email": "support@bazzite.com",
+    "url": "https://www.bazzite.com"
+  },
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore . lib/ client/ test/",
+    "lint:fix": "yarn lint --fix",
+    "prepare-test": "cross-env NODE_ENV=test node test/prepare.js",
+    "svg": "vsvg -s ./client/assets/icons -t ./client/components/icons --es6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazzite/statusfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bazzite/statusfy/issues"
+  },
+  "homepage": "https://statusfy.co",
+  "keywords": [
+    "bazzite",
+    "statusfy",
+    "generator",
+    "web-application",
+    "statuspage"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.22",
+    "@nuxtjs/axios": "5.6.0",
+    "@nuxtjs/onesignal": "3.0.0-beta.16",
+    "@nuxtjs/pwa": "3.0.0-beta.16",
+    "@statusfy/common": "0.4.3",
+    "@statusfy/markdown": "0.4.3",
+    "body-parser": "1.19.0",
+    "browser-sync": "2.26.7",
+    "cors": "2.8.5",
+    "cross-env": "5.2.0",
+    "cross-spawn": "6.0.5",
+    "css-loader": "3.2.0",
+    "dayjs": "1.8.15",
+    "dot-prop": "5.1.0",
+    "express": "4.17.1",
+    "feed": "4.0.0",
+    "helmet": "3.20.0",
+    "ics": "2.16.0",
+    "inquirer": "7.0.0",
+    "locale-code": "2.0.2",
+    "lodash.clonedeepwith": "4.5.0",
+    "lodash.drop": "4.1.1",
+    "lodash.get": "4.4.2",
+    "lodash.isstring": "4.0.1",
+    "lodash.sortby": "4.7.0",
+    "nodemon": "1.19.1",
+    "nuxt": "2.9.1",
+    "nuxt-i18n": "6.0.2",
+    "opener": "1.5.1",
+    "portfinder": "1.0.23",
+    "sitemap": "3.2.2",
+    "url": "0.11.0",
+    "v-tooltip": "2.0.2",
+    "vue-multianalytics": "1.11.7",
+    "vue-svgicon": "3.2.6"
+  },
+  "devDependencies": {
+    "@nuxt/types": "0.2.5",
+    "@nuxtjs/eslint-config": "1.1.2",
+    "@statusfy/test-utils": "0.4.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.0.2",
+    "eslint": "6.2.1",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-config-standard": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.15.2",
+    "eslint-plugin-node": "9.1.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1"
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=5"
+  }
+}
